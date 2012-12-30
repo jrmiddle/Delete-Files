@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		D0E3C6D408D4FC6600B934B1 /* Delete Files Installer */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D0E3C6D708D4FCA200B934B1 /* Build configuration list for PBXAggregateTarget "Delete Files Installer" */;
+			buildPhases = (
+				D0E3C6DD08D4FDD300B934B1 /* Make Installer */,
+			);
+			dependencies = (
+				D0E3C6D608D4FC7B00B934B1 /* PBXTargetDependency */,
+			);
+			name = "Delete Files Installer";
+			productName = Installer;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXAppleScriptBuildPhase section */
+		65081C2E067A9A0C006247A1 /* AppleScript */ = {
+			isa = PBXAppleScriptBuildPhase;
+			buildActionMask = 2147483647;
+			contextName = "";
+			files = (
+				65E2187606F52A5F00613B9C /* main.applescript in AppleScript */,
+			);
+			isSharedContext = 0;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXAppleScriptBuildPhase section */
+
+/* Begin PBXBuildFile section */
+		65081C33067A9A0C006247A1 /* main.nib in Resources */ = {isa = PBXBuildFile; fileRef = 65AABA18056A9B5C006CE269 /* main.nib */; };
+		65081C37067A9A0C006247A1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		65081C38067A9A0C006247A1 /* Automator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AABA78056AB2A5006CE269 /* Automator.framework */; };
+		65E2187606F52A5F00613B9C /* main.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 65E2187306F52A5F00613B9C /* main.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0E3C6D508D4FC7B00B934B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65081C2D067A9A0C006247A1;
+			remoteInfo = "Delete Files";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		65081C3A067A9A0C006247A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65081C3B067A9A0C006247A1 /* Delete Files.action */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Delete Files.action"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6578AEF2078DDFFD004A0FC7 /* AppleScriptKit.sdef */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.sdef; name = AppleScriptKit.sdef; path = /System/Library/Frameworks/AppleScriptKit.framework/Versions/A/Resources/AppleScriptKit.sdef; sourceTree = "<absolute>"; };
+		65AABA19056A9B5C006CE269 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/main.nib; sourceTree = "<group>"; };
+		65AABA78056AB2A5006CE269 /* Automator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Automator.framework; path = /System/Library/Frameworks/Automator.framework; sourceTree = "<absolute>"; };
+		65E2187306F52A5F00613B9C /* main.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = main.applescript; sourceTree = "<group>"; };
+		D01B03D608CF54C60055538F /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		D04021A308D53C05007B64E8 /* Delete Files Installer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = "Delete Files Installer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0A440BB08D8B37A00874438 /* Actions Installer.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = "Actions Installer.app"; sourceTree = "<group>"; };
+		D0A441AF08D8BA3500874438 /* lgpl.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = lgpl.txt; sourceTree = "<group>"; };
+		D0E3C69F08D4F97900B934B1 /* document.wflow */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = document.wflow; path = "Delete Files Sample Workflows/Delete and Wipe Items.workflow/Contents/document.wflow"; sourceTree = SOURCE_ROOT; };
+		D0E3C6A208D4F97900B934B1 /* document.wflow */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = document.wflow; path = "Delete Files Sample Workflows/Delete Items.workflow/Contents/document.wflow"; sourceTree = SOURCE_ROOT; };
+		D0E3C6A508D4F97900B934B1 /* document.wflow */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = document.wflow; path = "Delete Files Sample Workflows/Wipe Safari Caches.workflow/Contents/document.wflow"; sourceTree = SOURCE_ROOT; };
+		D0E3C6A708D4F97900B934B1 /* Delete Files README.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = "Delete Files README.rtfd"; path = "Documentation/Delete Files README.rtfd"; sourceTree = SOURCE_ROOT; };
+		D0E3C6A808D4F97900B934B1 /* description.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = description.rtfd; path = Documentation/description.rtfd; sourceTree = SOURCE_ROOT; };
+		D0E3C6C008D4FBF900B934B1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Actions Installer/Contents/Info.plist"; sourceTree = SOURCE_ROOT; };
+		D0E3C6C208D4FBF900B934B1 /* applet */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = applet; path = "Actions Installer/Contents/MacOS/applet"; sourceTree = SOURCE_ROOT; };
+		D0E3C6C308D4FBF900B934B1 /* PkgInfo */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = PkgInfo; path = "Actions Installer/Contents/PkgInfo"; sourceTree = SOURCE_ROOT; };
+		D0E3C6C708D4FBF900B934B1 /* main.scpt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.scpt; name = main.scpt; path = "Actions Installer/Contents/Resources/Scripts/main.scpt"; sourceTree = SOURCE_ROOT; };
+		D0E3C6CA08D4FBF900B934B1 /* applet.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = applet.icns; path = "Actions Installer/Contents/Resources/applet.icns"; sourceTree = SOURCE_ROOT; };
+		D0E3C6CB08D4FBF900B934B1 /* applet.rsrc */ = {isa = PBXFileReference; lastKnownFileType = archive.rsrc; name = applet.rsrc; path = "Actions Installer/Contents/Resources/applet.rsrc"; sourceTree = SOURCE_ROOT; };
+		D0E3C6CC08D4FBF900B934B1 /* description.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = description.rtfd; path = "Actions Installer/Contents/Resources/description.rtfd"; sourceTree = SOURCE_ROOT; };
+		D0E3C6CD08D4FBF900B934B1 /* localize.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = localize.plist; path = "Actions Installer/Contents/Resources/localize.plist"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65081C36067A9A0C006247A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65081C37067A9A0C006247A1 /* Cocoa.framework in Frameworks */,
+				65081C38067A9A0C006247A1 /* Automator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* Automator Action */ = {
+			isa = PBXGroup;
+			children = (
+				D0A440BB08D8B37A00874438 /* Actions Installer.app */,
+				65081C3A067A9A0C006247A1 /* Info.plist */,
+				65AABA0F056A9AD1006CE269 /* Scripts */,
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				D0E3C69C08D4F97900B934B1 /* Delete Files Sample Workflows */,
+				D0E3C6A608D4F97900B934B1 /* Documentation */,
+				D0E3C67408D4F80300B934B1 /* Actions Installer */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			comments = "this is a general project comment.";
+			name = "Automator Action";
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				65AABA18056A9B5C006CE269 /* main.nib */,
+				6578AEF2078DDFFD004A0FC7 /* AppleScriptKit.sdef */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+				65AABA78056AB2A5006CE269 /* Automator.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D04021A308D53C05007B64E8 /* Delete Files Installer.app */,
+				D01B03D608CF54C60055538F /* README */,
+				65081C3B067A9A0C006247A1 /* Delete Files.action */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65AABA0F056A9AD1006CE269 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				65E2187306F52A5F00613B9C /* main.applescript */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		D0E3C67408D4F80300B934B1 /* Actions Installer */ = {
+			isa = PBXGroup;
+			children = (
+				D0E3C6BF08D4FBF900B934B1 /* Contents */,
+			);
+			path = "Actions Installer";
+			sourceTree = SOURCE_ROOT;
+		};
+		D0E3C69C08D4F97900B934B1 /* Delete Files Sample Workflows */ = {
+			isa = PBXGroup;
+			children = (
+				D0E3C69D08D4F97900B934B1 /* Delete and Wipe Items.workflow */,
+				D0E3C6A008D4F97900B934B1 /* Delete Items.workflow */,
+				D0E3C6A308D4F97900B934B1 /* Wipe Safari Caches.workflow */,
+			);
+			path = "Delete Files Sample Workflows";
+			sourceTree = SOURCE_ROOT;
+		};
+		D0E3C69D08D4F97900B934B1 /* Delete and Wipe Items.workflow */ = {
+			isa = PBXGroup;
+			children = (
+				D0E3C69E08D4F97900B934B1 /* Contents */,
+			);
+			includeInIndex = 0;
+			name = "Delete and Wipe Items.workflow";
+			path = "Delete Files Sample Workflows/Delete and Wipe Items.workflow";
+			sourceTree = SOURCE_ROOT;
+		};
+		D0E3C69E08D4F97900B934B1 /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				D0E3C69F08D4F97900B934B1 /* document.wflow */,
+			);
+			name = Contents;
+			path = "Delete Files Sample Workflows/Delete and Wipe Items.workflow/Contents";
+			sourceTree = SOURCE_ROOT;
+		};
+		D0E3C6A008D4F97900B934B1 /* Delete Items.workflow */ = {
+			isa = PBXGroup;
+			children = (
+				D0E3C6A108D4F97900B934B1 /* Contents */,
+			);
+			name = "Delete Items.workflow";
+			path = "Delete Files Sample Workflows/Delete Items.workflow";
+			sourceTree = SOURCE_ROOT;
+		};
+		D0E3C6A108D4F97900B934B1 /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				D0E3C6A208D4F97900B934B1 /* document.wflow */,
+			);
+			name = Contents;
+			path = "Delete Files Sample Workflows/Delete Items.workflow/Contents";
+			sourceTree = SOURCE_ROOT;
+		};
+		D0E3C6A308D4F97900B934B1 /* Wipe Safari Caches.workflow */ = {
+			isa = PBXGroup;
+			children = (
+				D0E3C6A408D4F97900B934B1 /* Contents */,
+			);
+			name = "Wipe Safari Caches.workflow";
+			path = "Delete Files Sample Workflows/Wipe Safari Caches.workflow";
+			sourceTree = SOURCE_ROOT;
+		};
+		D0E3C6A408D4F97900B934B1 /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				D0E3C6A508D4F97900B934B1 /* document.wflow */,
+			);
+			name = Contents;
+			path = "Delete Files Sample Workflows/Wipe Safari Caches.workflow/Contents";
+			sourceTree = SOURCE_ROOT;
+		};
+		D0E3C6A608D4F97900B934B1 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				D0A441AF08D8BA3500874438 /* lgpl.txt */,
+				D0E3C6A708D4F97900B934B1 /* Delete Files README.rtfd */,
+				D0E3C6A808D4F97900B934B1 /* description.rtfd */,
+			);
+			path = Documentation;
+			sourceTree = SOURCE_ROOT;
+		};
+		D0E3C6BF08D4FBF900B934B1 /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				D0E3C6C008D4FBF900B934B1 /* Info.plist */,
+				D0E3C6C108D4FBF900B934B1 /* MacOS */,
+				D0E3C6C308D4FBF900B934B1 /* PkgInfo */,
+				D0E3C6C408D4FBF900B934B1 /* Resources */,
+			);
+			name = Contents;
+			path = "Actions Installer/Contents";
+			sourceTree = SOURCE_ROOT;
+		};
+		D0E3C6C108D4FBF900B934B1 /* MacOS */ = {
+			isa = PBXGroup;
+			children = (
+				D0E3C6C208D4FBF900B934B1 /* applet */,
+			);
+			name = MacOS;
+			path = "Actions Installer/Contents/MacOS";
+			sourceTree = SOURCE_ROOT;
+		};
+		D0E3C6C408D4FBF900B934B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D0E3C6C508D4FBF900B934B1 /* Actions */,
+				D0E3C6C608D4FBF900B934B1 /* Scripts */,
+				D0E3C6C908D4FBF900B934B1 /* Support */,
+				D0E3C6CA08D4FBF900B934B1 /* applet.icns */,
+				D0E3C6CB08D4FBF900B934B1 /* applet.rsrc */,
+				D0E3C6CC08D4FBF900B934B1 /* description.rtfd */,
+				D0E3C6CD08D4FBF900B934B1 /* localize.plist */,
+			);
+			name = Resources;
+			path = "Actions Installer/Contents/Resources";
+			sourceTree = SOURCE_ROOT;
+		};
+		D0E3C6C508D4FBF900B934B1 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Actions;
+			path = "Actions Installer/Contents/Resources/Actions";
+			sourceTree = SOURCE_ROOT;
+		};
+		D0E3C6C608D4FBF900B934B1 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				D0E3C6C708D4FBF900B934B1 /* main.scpt */,
+			);
+			name = Scripts;
+			path = "Actions Installer/Contents/Resources/Scripts";
+			sourceTree = SOURCE_ROOT;
+		};
+		D0E3C6C908D4FBF900B934B1 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Support;
+			path = "Actions Installer/Contents/Resources/Support";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		65081C30067A9A0C006247A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		65081C2D067A9A0C006247A1 /* Delete Files */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D01B039908CF437E0055538F /* Build configuration list for PBXNativeTarget "Delete Files" */;
+			buildPhases = (
+				65081C2E067A9A0C006247A1 /* AppleScript */,
+				65081C30067A9A0C006247A1 /* Headers */,
+				65081C31067A9A0C006247A1 /* Resources */,
+				65081C35067A9A0C006247A1 /* Sources */,
+				65081C36067A9A0C006247A1 /* Frameworks */,
+				65081C39067A9A0C006247A1 /* Rez */,
+				25038757080C6CE300E1128B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			comments = "Author: Justin Middleton, jrmiddle@mac.com\nhttp://homepage.mac.com/jrmiddle/scripts";
+			dependencies = (
+			);
+			name = "Delete Files";
+			productInstallPath = "$(USER_LIBRARY_DIR)/Automator";
+			productName = "Automator Action";
+			productReference = 65081C3B067A9A0C006247A1 /* Delete Files.action */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = D01B039D08CF437E0055538F /* Build configuration list for PBXProject "Delete Files" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* Automator Action */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65081C2D067A9A0C006247A1 /* Delete Files */,
+				D0E3C6D408D4FC6600B934B1 /* Delete Files Installer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65081C31067A9A0C006247A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65081C33067A9A0C006247A1 /* main.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		65081C39067A9A0C006247A1 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25038757080C6CE300E1128B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/bin/amlint \"$BUILT_PRODUCTS_DIR/Delete Files.action\"";
+		};
+		D0E3C6DD08D4FDD300B934B1 /* Make Installer */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"/Users/justin/p4projects/Delete Files/Documentation/Delete Files README.rtfd",
+				"/Users/justin/p4projects/Delete Files/Documentation/description.rtfd",
+				"/Users/justin/p4projects/Delete Files/Delete Files Sample Workflows",
+				"/Users/justin/p4projects/Delete Files/build/Release/Delete Files.action",
+			);
+			name = "Make Installer";
+			outputPaths = (
+				"/Users/justin/p4projects/Delete Files/build/Release/Delete Files Installer.app",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# note... comment out the following section if you're not me.\nP4=/usr/local/bin/p4\nP4PORT=localhost:1666\nP4USER=justin\n\nAWK=/usr/bin/awk\n\nSROOT=`pwd`\nIROOT=\"${BUILT_PRODUCTS_DIR}/Delete Files Installer\"\nmkdir -p \"${IROOT}\"\ncp -r \"${SROOT}\"/\"Actions Installer\"/* \"$IROOT\"\nchmod -R +w \"${IROOT}\"\ncp -r \"${SROOT}/Delete Files Sample Workflows\" \"${IROOT}/Contents/Resources/Support\"\ncp -r \"${SROOT}/Documentation/Delete Files README.rtfd\" \"${IROOT}\"/Contents/Resources/Support\ncp -r \"${SROOT}/Documentation/description.rtfd\" \"${IROOT}/Contents/Resources\"\ncp -r \"${BUILT_PRODUCTS_DIR}/Delete Files.action\" \"${IROOT}/Contents/Resources/Actions\"\n\n# put a build number stamp in the package, if possible.\nif [ \"X$P4\" != \"X\" ]; then\n    P4PORT=localhost:1666 P4USER=justin ${P4} changes -m 1 | \\\n           ${AWK} '{print $2}' > \"${IROOT}/Contents/Resources/BUILD_NUMBER\"\nfi\n\nrm -rf \"${IROOT}.app\"\nmv \"${IROOT}\" \"${IROOT}.app\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65081C35067A9A0C006247A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0E3C6D608D4FC7B00B934B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65081C2D067A9A0C006247A1 /* Delete Files */;
+			targetProxy = D0E3C6D508D4FC7B00B934B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65AABA18056A9B5C006CE269 /* main.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65AABA19056A9B5C006CE269 /* English */,
+			);
+			name = main.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D01B039A08CF437E0055538F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Automator";
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_OSAFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Delete Files";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				WRAPPER_EXTENSION = action;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D01B039B08CF437E0055538F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Automator";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_OSAFLAGS = "-x";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Delete Files";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				WRAPPER_EXTENSION = action;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		D01B039C08CF437E0055538F /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Automator";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_OSAFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Delete Files";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				WRAPPER_EXTENSION = action;
+			};
+			name = Default;
+		};
+		D01B039E08CF437E0055538F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		D01B039F08CF437E0055538F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		D01B03A008CF437E0055538F /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		D0E3C6D808D4FCA200B934B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Installer;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		D0E3C6D908D4FCA200B934B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Installer;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		D0E3C6DA08D4FCA200B934B1 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Installer;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D01B039908CF437E0055538F /* Build configuration list for PBXNativeTarget "Delete Files" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D01B039A08CF437E0055538F /* Debug */,
+				D01B039B08CF437E0055538F /* Release */,
+				D01B039C08CF437E0055538F /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		D01B039D08CF437E0055538F /* Build configuration list for PBXProject "Delete Files" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D01B039E08CF437E0055538F /* Debug */,
+				D01B039F08CF437E0055538F /* Release */,
+				D01B03A008CF437E0055538F /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		D0E3C6D708D4FCA200B934B1 /* Build configuration list for PBXAggregateTarget "Delete Files Installer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E3C6D808D4FCA200B934B1 /* Debug */,
+				D0E3C6D908D4FCA200B934B1 /* Release */,
+				D0E3C6DA08D4FCA200B934B1 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
