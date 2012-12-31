@@ -410,7 +410,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/bin/amlint \"$BUILT_PRODUCTS_DIR/Delete Files.action\"";
+			shellScript = "amlint \"$BUILT_PRODUCTS_DIR/Delete Files.action\"";
 		};
 		D0E3C6DD08D4FDD300B934B1 /* Make Installer */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -418,18 +418,18 @@
 			files = (
 			);
 			inputPaths = (
-				"/Users/justin/p4projects/Delete Files/Documentation/Delete Files README.rtfd",
-				"/Users/justin/p4projects/Delete Files/Documentation/description.rtfd",
-				"/Users/justin/p4projects/Delete Files/Delete Files Sample Workflows",
-				"/Users/justin/p4projects/Delete Files/build/Release/Delete Files.action",
+				"/Users/justin/projects/Delete Files/Documentation/Delete Files README.rtfd",
+				"/Users/justin/projects/Delete Files/Documentation/description.rtfd",
+				"/Users/justin/projects/Delete Files/Delete Files Sample Workflows",
+				"/Users/justin/projects/Delete Files/build/Release/Delete Files.action",
 			);
 			name = "Make Installer";
 			outputPaths = (
-				"/Users/justin/p4projects/Delete Files/build/Release/Delete Files Installer.app",
+				"/Users/justin/projects/Delete Files/build/Release/Delete Files Installer.app",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# note... comment out the following section if you're not me.\nP4=/usr/local/bin/p4\nP4PORT=localhost:1666\nP4USER=justin\n\nAWK=/usr/bin/awk\n\nSROOT=`pwd`\nIROOT=\"${BUILT_PRODUCTS_DIR}/Delete Files Installer\"\nmkdir -p \"${IROOT}\"\ncp -r \"${SROOT}\"/\"Actions Installer\"/* \"$IROOT\"\nchmod -R +w \"${IROOT}\"\ncp -r \"${SROOT}/Delete Files Sample Workflows\" \"${IROOT}/Contents/Resources/Support\"\ncp -r \"${SROOT}/Documentation/Delete Files README.rtfd\" \"${IROOT}\"/Contents/Resources/Support\ncp -r \"${SROOT}/Documentation/description.rtfd\" \"${IROOT}/Contents/Resources\"\ncp -r \"${BUILT_PRODUCTS_DIR}/Delete Files.action\" \"${IROOT}/Contents/Resources/Actions\"\n\n# put a build number stamp in the package, if possible.\nif [ \"X$P4\" != \"X\" ]; then\n    P4PORT=localhost:1666 P4USER=justin ${P4} changes -m 1 | \\\n           ${AWK} '{print $2}' > \"${IROOT}/Contents/Resources/BUILD_NUMBER\"\nfi\n\nrm -rf \"${IROOT}.app\"\nmv \"${IROOT}\" \"${IROOT}.app\"";
+			shellScript = "# note... comment out the following section if you're not me.\n# P4=/usr/local/bin/p4\n# P4PORT=localhost:1666\n# P4USER=justin\n\nAWK=/usr/bin/awk\n\nSROOT=`pwd`\nIROOT=\"${BUILT_PRODUCTS_DIR}/Delete Files Installer\"\nmkdir -p \"${IROOT}\"\ncp -r \"${SROOT}\"/\"Actions Installer\"/* \"$IROOT\"\nchmod -R +w \"${IROOT}\"\ncp -r \"${SROOT}/Delete Files Sample Workflows\" \"${IROOT}/Contents/Resources/Support\"\ncp -r \"${SROOT}/Documentation/Delete Files README.rtfd\" \"${IROOT}\"/Contents/Resources/Support\ncp -r \"${SROOT}/Documentation/description.rtfd\" \"${IROOT}/Contents/Resources\"\ncp -r \"${BUILT_PRODUCTS_DIR}/Delete Files.action\" \"${IROOT}/Contents/Resources/Actions\"\n\n# put a build number stamp in the package, if possible.\n#if [ \"X$P4\" != \"X\" ]; then\n#    P4PORT=localhost:1666 P4USER=justin ${P4} changes -m 1 | \\\n#           ${AWK} '{print $2}' > \"${IROOT}/Contents/Resources/BUILD_NUMBER\"\n#fi\n\nrm -rf \"${IROOT}.app\"\nmv \"${IROOT}\" \"${IROOT}.app\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -540,18 +540,21 @@
 		D01B039E08CF437E0055538F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 			};
 			name = Debug;
 		};
 		D01B039F08CF437E0055538F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 			};
 			name = Release;
 		};
 		D01B03A008CF437E0055538F /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 			};
 			name = Default;
 		};

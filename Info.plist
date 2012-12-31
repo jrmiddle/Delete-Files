@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>AMAccepts</key>
@@ -26,7 +26,7 @@
 		<key>confirmAction</key>
 		<true/>
 		<key>confirmText</key>
-		<string>Permanently delete (can't be undone)?</string>
+		<string>Permanently delete (can&apos;t be undone)?</string>
 		<key>deleteType</key>
 		<integer>0</integer>
 		<key>ignoreErrors</key>
@@ -52,7 +52,7 @@
 			N-pass Wipe: Overwrite with files with random data N times (files cannot be recovered).
 			Recursive: Delete/Overwrite entire directory trees.
 			Files Only: Leave directory structures in place.
-			Ignore Errors: don't prompt to stop/continue when errors occur.
+			Ignore Errors: don&apos;t prompt to stop/continue when errors occur.
 			Include read-only files: 
 		</string>
 		<key>AMDRelatedActions</key>
@@ -73,7 +73,6 @@
 		<string>recursive</string>
 		<string>secure</string>
 	</array>
-	
 	<key>AMName</key>
 	<string>Delete Files</string>
 	<key>AMProvides</key>
@@ -96,7 +95,7 @@
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>com.justinrobertmiddleton.Automator.Delete_Files</string>
+	<string>com.justinrobertmiddleton.Automator.DeleteFiles</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
