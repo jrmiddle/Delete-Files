@@ -17,4 +17,5 @@ profile
 DerivedData
 .idea/
 Dists/
-"Old Builds/"
+Old Builds/
+*.dmg
