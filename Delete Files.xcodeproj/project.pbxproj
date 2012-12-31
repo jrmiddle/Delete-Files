@@ -39,6 +39,7 @@
 		65081C37067A9A0C006247A1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 		65081C38067A9A0C006247A1 /* Automator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AABA78056AB2A5006CE269 /* Automator.framework */; };
 		65E2187606F52A5F00613B9C /* main.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 65E2187306F52A5F00613B9C /* main.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
+		D0F69E061692088E0032042F /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D0F69E051692088E0032042F /* LICENSE.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,14 +62,11 @@
 		65AABA19056A9B5C006CE269 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/main.nib; sourceTree = "<group>"; };
 		65AABA78056AB2A5006CE269 /* Automator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Automator.framework; path = /System/Library/Frameworks/Automator.framework; sourceTree = "<absolute>"; };
 		65E2187306F52A5F00613B9C /* main.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = main.applescript; sourceTree = "<group>"; };
-		D01B03D608CF54C60055538F /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		D04021A308D53C05007B64E8 /* Delete Files Installer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = "Delete Files Installer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0A441AF08D8BA3500874438 /* lgpl.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = lgpl.txt; sourceTree = "<group>"; };
 		D0E3C69F08D4F97900B934B1 /* document.wflow */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = document.wflow; path = "Delete Files Sample Workflows/Delete and Wipe Items.workflow/Contents/document.wflow"; sourceTree = SOURCE_ROOT; };
 		D0E3C6A208D4F97900B934B1 /* document.wflow */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = document.wflow; path = "Delete Files Sample Workflows/Delete Items.workflow/Contents/document.wflow"; sourceTree = SOURCE_ROOT; };
 		D0E3C6A508D4F97900B934B1 /* document.wflow */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = document.wflow; path = "Delete Files Sample Workflows/Wipe Safari Caches.workflow/Contents/document.wflow"; sourceTree = SOURCE_ROOT; };
 		D0E3C6A708D4F97900B934B1 /* Delete Files README.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = "Delete Files README.rtfd"; path = "Documentation/Delete Files README.rtfd"; sourceTree = SOURCE_ROOT; };
-		D0E3C6A808D4F97900B934B1 /* description.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = description.rtfd; path = Documentation/description.rtfd; sourceTree = SOURCE_ROOT; };
+		D0F69E051692088E0032042F /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,8 +136,6 @@
 		19C28FB8FE9D52D311CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D04021A308D53C05007B64E8 /* Delete Files Installer.app */,
-				D01B03D608CF54C60055538F /* README */,
 				65081C3B067A9A0C006247A1 /* Delete Files.action */,
 			);
 			name = Products;
@@ -222,9 +218,8 @@
 		D0E3C6A608D4F97900B934B1 /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
-				D0A441AF08D8BA3500874438 /* lgpl.txt */,
+				D0F69E051692088E0032042F /* LICENSE.txt */,
 				D0E3C6A708D4F97900B934B1 /* Delete Files README.rtfd */,
-				D0E3C6A808D4F97900B934B1 /* description.rtfd */,
 			);
 			path = Documentation;
 			sourceTree = SOURCE_ROOT;
@@ -296,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65081C33067A9A0C006247A1 /* main.nib in Resources */,
+				D0F69E061692088E0032042F /* LICENSE.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
