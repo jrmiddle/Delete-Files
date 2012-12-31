@@ -338,7 +338,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\nAWK=/usr/bin/awk\n\nARCHIVE_NAME=\"Delete Files 2\"\nIROOT=\"${BUILT_PRODUCTS_DIR}/${ARCHIVE_NAME}\"\nTMP_DMG=\"${IROOT}.dmg\"\nTARGET_DMG=\"${SRCROOT}/Dists/${ARCHIVE_NAME}.dmg\"\nmkdir -p \"${IROOT}\"\nchmod -R +w \"${IROOT}\"\ncp -r \"${SRCROOT}/Delete Files Sample Workflows\" \"${IROOT}\"\ncp -r \"${SRCROOT}/Documentation/Delete Files README.rtfd\" \"${IROOT}\"\ncp -r \"${SRCROOT}/Documentation/description.rtfd\" \"${IROOT}\"\ncp -r \"${BUILT_PRODUCTS_DIR}/Delete Files.action\" \"${IROOT}\"\n\necho \"Delete existing ${TMP_DMG}\"\nrm -f ${TMP_DMG}\n\necho \"Delete existing ${TARGET_DMG}\"\nrm -f \"${TARGET_DMG}\"\n\nhdiutil create \"${TMP_DMG}\" -ov -volname \"${ARCHIVE_NAME}\" -fs HFS+ -srcfolder \"${IROOT}\"\nhdiutil convert \"${TMP_DMG}\" -format UDZO -o \"${TARGET_DMG}\"\n";
+			shellScript = "\nAWK=/usr/bin/awk\n\nARCHIVE_NAME=\"Delete Files 2\"\nIROOT=\"${BUILT_PRODUCTS_DIR}/${ARCHIVE_NAME}\"\nTMP_DMG=\"${IROOT}.dmg\"\nTARGET_DMG=\"${SRCROOT}/Dists/${ARCHIVE_NAME}.dmg\"\nmkdir -p \"${IROOT}\"\nchmod -R +w \"${IROOT}\"\ncp -r \"${SRCROOT}/Delete Files Sample Workflows\" \"${IROOT}\"\ncp -r \"${SRCROOT}/Documentation/Delete Files README.rtfd\" \"${IROOT}\"\ncp -r \"${BUILT_PRODUCTS_DIR}/Delete Files.action\" \"${IROOT}\"\n\necho \"Delete existing ${TMP_DMG}\"\nrm -f ${TMP_DMG}\n\necho \"Delete existing ${TARGET_DMG}\"\nrm -f \"${TARGET_DMG}\"\n\nhdiutil create \"${TMP_DMG}\" -ov -volname \"${ARCHIVE_NAME}\" -fs HFS+ -srcfolder \"${IROOT}\"\nhdiutil convert \"${TMP_DMG}\" -format UDZO -o \"${TARGET_DMG}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
