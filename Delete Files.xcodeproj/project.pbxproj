@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		D0E3C6D408D4FC6600B934B1 /* Delete Files Installer */ = {
+		D0E3C6D408D4FC6600B934B1 /* Delete Files DMG */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = D0E3C6D708D4FCA200B934B1 /* Build configuration list for PBXAggregateTarget "Delete Files Installer" */;
+			buildConfigurationList = D0E3C6D708D4FCA200B934B1 /* Build configuration list for PBXAggregateTarget "Delete Files DMG" */;
 			buildPhases = (
-				D0E3C6DD08D4FDD300B934B1 /* Make Installer */,
+				D0E3C6DD08D4FDD300B934B1 /* Make DMG */,
 			);
 			dependencies = (
 				D0E3C6D608D4FC7B00B934B1 /* PBXTargetDependency */,
 			);
-			name = "Delete Files Installer";
+			name = "Delete Files DMG";
 			productName = Installer;
 		};
 /* End PBXAggregateTarget section */
@@ -143,6 +143,7 @@
 				65081C3B067A9A0C006247A1 /* Delete Files.action */,
 			);
 			name = Products;
+			path = Dists;
 			sourceTree = "<group>";
 		};
 		65AABA0F056A9AD1006CE269 /* Scripts */ = {
@@ -284,7 +285,7 @@
 			projectRoot = "";
 			targets = (
 				65081C2D067A9A0C006247A1 /* Delete Files */,
-				D0E3C6D408D4FC6600B934B1 /* Delete Files Installer */,
+				D0E3C6D408D4FC6600B934B1 /* Delete Files DMG */,
 			);
 		};
 /* End PBXProject section */
@@ -324,24 +325,24 @@
 			shellPath = /bin/sh;
 			shellScript = "amlint \"$BUILT_PRODUCTS_DIR/Delete Files.action\"";
 		};
-		D0E3C6DD08D4FDD300B934B1 /* Make Installer */ = {
+		D0E3C6DD08D4FDD300B934B1 /* Make DMG */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"/Users/justin/projects/Delete Files/Documentation/Delete Files README.rtfd",
-				"/Users/justin/projects/Delete Files/Documentation/description.rtfd",
-				"/Users/justin/projects/Delete Files/Delete Files Sample Workflows",
-				"/Users/justin/projects/Delete Files/build/Release/Delete Files.action",
+				"$(SRCROOT)/Documentation/Delete Files README.rtfd",
+				"$(SRCROOT)/Documentation/description.rtfd",
+				"$(SRCROOT)/Delete Files Sample Workflows",
+				"$(BUILT_PRODUCTS_DIR)/Delete Files.action",
 			);
-			name = "Make Installer";
+			name = "Make DMG";
 			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/Delete Files 2.dmg",
+				"$(PRODUCTS)/Delete Files 2.dmg",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\nAWK=/usr/bin/awk\n\nSROOT=`pwd`\nARCHIVE_NAME=\"Delete Files 2\"\nIROOT=\"${BUILT_PRODUCTS_DIR}/${ARCHIVE_NAME}\"\nmkdir -p \"${IROOT}\"\nchmod -R +w \"${IROOT}\"\ncp -r \"${SROOT}/Delete Files Sample Workflows\" \"${IROOT}\"\ncp -r \"${SROOT}/Documentation/Delete Files README.rtfd\" \"${IROOT}\"\ncp -r \"${SROOT}/Documentation/description.rtfd\" \"${IROOT}\"\ncp -r \"${BUILT_PRODUCTS_DIR}/Delete Files.action\" \"${IROOT}\"\n\nhdiutil create \"/tmp/${ARCHIVE_NAME}.dmg\" -ov -volname \"${ARCHIVE_NAME}\" -fs HFS+ -srcfolder \"${IROOT}\"\nhdiutil convert \"/tmp/${ARCHIVE_NAME}.dmg\" -format UDZO -o \"${BUILT_PRODUCTS_DIR}/${ARCHIVE_NAME}.dmg\"\n";
+			shellScript = "\nAWK=/usr/bin/awk\n\nARCHIVE_NAME=\"Delete Files 2\"\nIROOT=\"${BUILT_PRODUCTS_DIR}/${ARCHIVE_NAME}\"\nTMP_DMG=\"${IROOT}.dmg\"\nTARGET_DMG=\"${SRCROOT}/Dists/${ARCHIVE_NAME}.dmg\"\nmkdir -p \"${IROOT}\"\nchmod -R +w \"${IROOT}\"\ncp -r \"${SRCROOT}/Delete Files Sample Workflows\" \"${IROOT}\"\ncp -r \"${SRCROOT}/Documentation/Delete Files README.rtfd\" \"${IROOT}\"\ncp -r \"${SRCROOT}/Documentation/description.rtfd\" \"${IROOT}\"\ncp -r \"${BUILT_PRODUCTS_DIR}/Delete Files.action\" \"${IROOT}\"\n\necho \"Delete existing ${TMP_DMG}\"\nrm -f ${TMP_DMG}\n\necho \"Delete existing ${TARGET_DMG}\"\nrm -f \"${TARGET_DMG}\"\n\nhdiutil create \"${TMP_DMG}\" -ov -volname \"${ARCHIVE_NAME}\" -fs HFS+ -srcfolder \"${IROOT}\"\nhdiutil convert \"${TMP_DMG}\" -format UDZO -o \"${TARGET_DMG}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -480,7 +481,7 @@
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Installer;
+				PRODUCT_NAME = "Delete Files 2.dmg";
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -500,7 +501,7 @@
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Installer;
+				PRODUCT_NAME = "Delete Files 2.dmg";
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -518,7 +519,7 @@
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Installer;
+				PRODUCT_NAME = "Delete Files 2.dmg";
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -551,7 +552,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		D0E3C6D708D4FCA200B934B1 /* Build configuration list for PBXAggregateTarget "Delete Files Installer" */ = {
+		D0E3C6D708D4FCA200B934B1 /* Build configuration list for PBXAggregateTarget "Delete Files DMG" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0E3C6D808D4FCA200B934B1 /* Debug */,
