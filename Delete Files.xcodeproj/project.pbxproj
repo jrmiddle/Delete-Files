@@ -63,21 +63,12 @@
 		65E2187306F52A5F00613B9C /* main.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = main.applescript; sourceTree = "<group>"; };
 		D01B03D608CF54C60055538F /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		D04021A308D53C05007B64E8 /* Delete Files Installer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = "Delete Files Installer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0A440BB08D8B37A00874438 /* Actions Installer.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = "Actions Installer.app"; sourceTree = "<group>"; };
 		D0A441AF08D8BA3500874438 /* lgpl.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = lgpl.txt; sourceTree = "<group>"; };
 		D0E3C69F08D4F97900B934B1 /* document.wflow */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = document.wflow; path = "Delete Files Sample Workflows/Delete and Wipe Items.workflow/Contents/document.wflow"; sourceTree = SOURCE_ROOT; };
 		D0E3C6A208D4F97900B934B1 /* document.wflow */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = document.wflow; path = "Delete Files Sample Workflows/Delete Items.workflow/Contents/document.wflow"; sourceTree = SOURCE_ROOT; };
 		D0E3C6A508D4F97900B934B1 /* document.wflow */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = document.wflow; path = "Delete Files Sample Workflows/Wipe Safari Caches.workflow/Contents/document.wflow"; sourceTree = SOURCE_ROOT; };
 		D0E3C6A708D4F97900B934B1 /* Delete Files README.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = "Delete Files README.rtfd"; path = "Documentation/Delete Files README.rtfd"; sourceTree = SOURCE_ROOT; };
 		D0E3C6A808D4F97900B934B1 /* description.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = description.rtfd; path = Documentation/description.rtfd; sourceTree = SOURCE_ROOT; };
-		D0E3C6C008D4FBF900B934B1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Actions Installer/Contents/Info.plist"; sourceTree = SOURCE_ROOT; };
-		D0E3C6C208D4FBF900B934B1 /* applet */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = applet; path = "Actions Installer/Contents/MacOS/applet"; sourceTree = SOURCE_ROOT; };
-		D0E3C6C308D4FBF900B934B1 /* PkgInfo */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = PkgInfo; path = "Actions Installer/Contents/PkgInfo"; sourceTree = SOURCE_ROOT; };
-		D0E3C6C708D4FBF900B934B1 /* main.scpt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.scpt; name = main.scpt; path = "Actions Installer/Contents/Resources/Scripts/main.scpt"; sourceTree = SOURCE_ROOT; };
-		D0E3C6CA08D4FBF900B934B1 /* applet.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = applet.icns; path = "Actions Installer/Contents/Resources/applet.icns"; sourceTree = SOURCE_ROOT; };
-		D0E3C6CB08D4FBF900B934B1 /* applet.rsrc */ = {isa = PBXFileReference; lastKnownFileType = archive.rsrc; name = applet.rsrc; path = "Actions Installer/Contents/Resources/applet.rsrc"; sourceTree = SOURCE_ROOT; };
-		D0E3C6CC08D4FBF900B934B1 /* description.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = description.rtfd; path = "Actions Installer/Contents/Resources/description.rtfd"; sourceTree = SOURCE_ROOT; };
-		D0E3C6CD08D4FBF900B934B1 /* localize.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = localize.plist; path = "Actions Installer/Contents/Resources/localize.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,15 +87,11 @@
 		089C166AFE841209C02AAC07 /* Automator Action */ = {
 			isa = PBXGroup;
 			children = (
-				D0A440BB08D8B37A00874438 /* Actions Installer.app */,
-				65081C3A067A9A0C006247A1 /* Info.plist */,
 				65AABA0F056A9AD1006CE269 /* Scripts */,
-				08FB77AFFE84173DC02AAC07 /* Classes */,
 				089C167CFE841241C02AAC07 /* Resources */,
 				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
 				D0E3C69C08D4F97900B934B1 /* Delete Files Sample Workflows */,
 				D0E3C6A608D4F97900B934B1 /* Documentation */,
-				D0E3C67408D4F80300B934B1 /* Actions Installer */,
 				19C28FB8FE9D52D311CA2CBB /* Products */,
 			);
 			comments = "this is a general project comment.";
@@ -123,17 +110,11 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				65081C3A067A9A0C006247A1 /* Info.plist */,
 				65AABA18056A9B5C006CE269 /* main.nib */,
 				6578AEF2078DDFFD004A0FC7 /* AppleScriptKit.sdef */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		08FB77AFFE84173DC02AAC07 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Classes;
 			sourceTree = "<group>";
 		};
 		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
@@ -171,14 +152,6 @@
 			);
 			name = Scripts;
 			sourceTree = "<group>";
-		};
-		D0E3C67408D4F80300B934B1 /* Actions Installer */ = {
-			isa = PBXGroup;
-			children = (
-				D0E3C6BF08D4FBF900B934B1 /* Contents */,
-			);
-			path = "Actions Installer";
-			sourceTree = SOURCE_ROOT;
 		};
 		D0E3C69C08D4F97900B934B1 /* Delete Files Sample Workflows */ = {
 			isa = PBXGroup;
@@ -253,67 +226,6 @@
 				D0E3C6A808D4F97900B934B1 /* description.rtfd */,
 			);
 			path = Documentation;
-			sourceTree = SOURCE_ROOT;
-		};
-		D0E3C6BF08D4FBF900B934B1 /* Contents */ = {
-			isa = PBXGroup;
-			children = (
-				D0E3C6C008D4FBF900B934B1 /* Info.plist */,
-				D0E3C6C108D4FBF900B934B1 /* MacOS */,
-				D0E3C6C308D4FBF900B934B1 /* PkgInfo */,
-				D0E3C6C408D4FBF900B934B1 /* Resources */,
-			);
-			name = Contents;
-			path = "Actions Installer/Contents";
-			sourceTree = SOURCE_ROOT;
-		};
-		D0E3C6C108D4FBF900B934B1 /* MacOS */ = {
-			isa = PBXGroup;
-			children = (
-				D0E3C6C208D4FBF900B934B1 /* applet */,
-			);
-			name = MacOS;
-			path = "Actions Installer/Contents/MacOS";
-			sourceTree = SOURCE_ROOT;
-		};
-		D0E3C6C408D4FBF900B934B1 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				D0E3C6C508D4FBF900B934B1 /* Actions */,
-				D0E3C6C608D4FBF900B934B1 /* Scripts */,
-				D0E3C6C908D4FBF900B934B1 /* Support */,
-				D0E3C6CA08D4FBF900B934B1 /* applet.icns */,
-				D0E3C6CB08D4FBF900B934B1 /* applet.rsrc */,
-				D0E3C6CC08D4FBF900B934B1 /* description.rtfd */,
-				D0E3C6CD08D4FBF900B934B1 /* localize.plist */,
-			);
-			name = Resources;
-			path = "Actions Installer/Contents/Resources";
-			sourceTree = SOURCE_ROOT;
-		};
-		D0E3C6C508D4FBF900B934B1 /* Actions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Actions;
-			path = "Actions Installer/Contents/Resources/Actions";
-			sourceTree = SOURCE_ROOT;
-		};
-		D0E3C6C608D4FBF900B934B1 /* Scripts */ = {
-			isa = PBXGroup;
-			children = (
-				D0E3C6C708D4FBF900B934B1 /* main.scpt */,
-			);
-			name = Scripts;
-			path = "Actions Installer/Contents/Resources/Scripts";
-			sourceTree = SOURCE_ROOT;
-		};
-		D0E3C6C908D4FBF900B934B1 /* Support */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Support;
-			path = "Actions Installer/Contents/Resources/Support";
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -425,11 +337,11 @@
 			);
 			name = "Make Installer";
 			outputPaths = (
-				"/Users/justin/projects/Delete Files/build/Release/Delete Files Installer.app",
+				"$(BUILT_PRODUCTS_DIR)/Delete Files 2.dmg",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# note... comment out the following section if you're not me.\n# P4=/usr/local/bin/p4\n# P4PORT=localhost:1666\n# P4USER=justin\n\nAWK=/usr/bin/awk\n\nSROOT=`pwd`\nIROOT=\"${BUILT_PRODUCTS_DIR}/Delete Files Installer\"\nmkdir -p \"${IROOT}\"\ncp -r \"${SROOT}\"/\"Actions Installer\"/* \"$IROOT\"\nchmod -R +w \"${IROOT}\"\ncp -r \"${SROOT}/Delete Files Sample Workflows\" \"${IROOT}/Contents/Resources/Support\"\ncp -r \"${SROOT}/Documentation/Delete Files README.rtfd\" \"${IROOT}\"/Contents/Resources/Support\ncp -r \"${SROOT}/Documentation/description.rtfd\" \"${IROOT}/Contents/Resources\"\ncp -r \"${BUILT_PRODUCTS_DIR}/Delete Files.action\" \"${IROOT}/Contents/Resources/Actions\"\n\n# put a build number stamp in the package, if possible.\n#if [ \"X$P4\" != \"X\" ]; then\n#    P4PORT=localhost:1666 P4USER=justin ${P4} changes -m 1 | \\\n#           ${AWK} '{print $2}' > \"${IROOT}/Contents/Resources/BUILD_NUMBER\"\n#fi\n\nrm -rf \"${IROOT}.app\"\nmv \"${IROOT}\" \"${IROOT}.app\"";
+			shellScript = "\nAWK=/usr/bin/awk\n\nSROOT=`pwd`\nARCHIVE_NAME=\"Delete Files 2\"\nIROOT=\"${BUILT_PRODUCTS_DIR}/${ARCHIVE_NAME}\"\nmkdir -p \"${IROOT}\"\nchmod -R +w \"${IROOT}\"\ncp -r \"${SROOT}/Delete Files Sample Workflows\" \"${IROOT}\"\ncp -r \"${SROOT}/Documentation/Delete Files README.rtfd\" \"${IROOT}\"\ncp -r \"${SROOT}/Documentation/description.rtfd\" \"${IROOT}\"\ncp -r \"${BUILT_PRODUCTS_DIR}/Delete Files.action\" \"${IROOT}\"\n\nhdiutil create \"/tmp/${ARCHIVE_NAME}.dmg\" -ov -volname \"${ARCHIVE_NAME}\" -fs HFS+ -srcfolder \"${IROOT}\"\nhdiutil convert \"/tmp/${ARCHIVE_NAME}.dmg\" -format UDZO -o \"${BUILT_PRODUCTS_DIR}/${ARCHIVE_NAME}.dmg\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
