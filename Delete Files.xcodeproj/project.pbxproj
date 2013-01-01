@@ -40,6 +40,7 @@
 		65081C38067A9A0C006247A1 /* Automator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AABA78056AB2A5006CE269 /* Automator.framework */; };
 		65E2187606F52A5F00613B9C /* main.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 65E2187306F52A5F00613B9C /* main.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
 		D0F69E061692088E0032042F /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D0F69E051692088E0032042F /* LICENSE.txt */; };
+		D0F69E0C169282420032042F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D0F69E0B169282420032042F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		D0E3C6A508D4F97900B934B1 /* document.wflow */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = document.wflow; path = "Delete Files Sample Workflows/Wipe Safari Caches.workflow/Contents/document.wflow"; sourceTree = SOURCE_ROOT; };
 		D0E3C6A708D4F97900B934B1 /* Delete Files README.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = "Delete Files README.rtfd"; path = "Documentation/Delete Files README.rtfd"; sourceTree = SOURCE_ROOT; };
 		D0F69E051692088E0032042F /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		D0F69E0B169282420032042F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		089C166AFE841209C02AAC07 /* Automator Action */ = {
 			isa = PBXGroup;
 			children = (
+				D0F69E0B169282420032042F /* README.md */,
 				65AABA0F056A9AD1006CE269 /* Scripts */,
 				089C167CFE841241C02AAC07 /* Resources */,
 				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
@@ -293,6 +296,7 @@
 			files = (
 				65081C33067A9A0C006247A1 /* main.nib in Resources */,
 				D0F69E061692088E0032042F /* LICENSE.txt in Resources */,
+				D0F69E0C169282420032042F /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

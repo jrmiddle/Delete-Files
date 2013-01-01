@@ -29,3 +29,7 @@ If you like it, or have suggestions, or just want to say "Hi," feel free to drop
 # Download
 
 If you just want to download and get rolling, you can find the binary (DMG image) at http://justinmiddleton.com.
+
+# Changes
+
+## 31 Dec 2012: Reanimated.  Recompiled for modern OSX/Intel; sample workflows updated.
