@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>54</string>
+	<string>346</string>
 	<key>AMApplicationVersion</key>
-	<string>1.0.1</string>
+	<string>2.3</string>
 	<key>AMDocumentVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>actions</key>
 	<array>
 		<dict>
@@ -25,7 +25,16 @@
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>1.0</string>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
 				<key>AMProvides</key>
 				<dict>
 					<key>Container</key>
@@ -37,45 +46,31 @@
 				</dict>
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Run AppleScript.action</string>
-				<key>ActionIconName</key>
-				<string>AppleScript</string>
 				<key>ActionName</key>
 				<string>Run AppleScript</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>on run {input, parameters}
-	
-	-- quit safari before wiping caches!
-	
-	try
-		tell application "Safari"
-			ignoring application responses
-				quit
-			end ignoring
-		end tell
-	on error
-		-- do nothing
-	end try
-	
-	return input
-end run</string>
+					<string>on run {input, parameters}		-- quit safari before wiping caches!		try		tell application "Safari"			ignoring application responses				quit			end ignoring		end tell	on error		-- do nothing	end try		return inputend run</string>
 				</dict>
-				<key>Application</key>
-				<array>
-					<string>Automator</string>
-				</array>
+				<key>ActionRuntimeParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}		-- quit safari before wiping caches!		try		tell application "Safari"			ignoring application responses				quit			end ignoring		end tell	on error		-- do nothing	end try		return inputend run</string>
+					<key>temporary items path</key>
+					<string>/var/folders/5k/w1kdr8048xj08f0059b215yh0000gp/T/5DC820FF-D988-4FE0-8863-E9C0D1E7E428/1/com.apple.Automator.RunScript</string>
+				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
 				<key>CFBundleVersion</key>
-				<string>1.0</string>
+				<string>1.0.2</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<false/>
 				<key>CanShowWhenRun</key>
 				<true/>
 				<key>Category</key>
 				<array>
-					<string>Utility</string>
+					<string>AMCategoryUtilities</string>
 				</array>
 				<key>Class Name</key>
 				<string>RunScriptAction</string>
@@ -87,8 +82,6 @@ end run</string>
 				</array>
 				<key>OutputUUID</key>
 				<string>5F141038-786C-45BC-B34A-45BFAF3A73D1</string>
-				<key>StartAction</key>
-				<false/>
 				<key>UUID</key>
 				<string>84BA667B-D3CC-4161-8217-051C4FBC0C9D</string>
 				<key>UnlocalizedApplications</key>
@@ -116,17 +109,15 @@ end run</string>
 						<string>0</string>
 					</dict>
 				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>325.000000:766.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
-			<key>collapsed</key>
-			<false/>
-			<key>isOutletsVisible</key>
-			<false/>
 			<key>isViewVisible</key>
 			<true/>
-			<key>location</key>
-			<string>575.000000:642.000000</string>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -139,56 +130,83 @@ end run</string>
 					<true/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.applescript.alias-object</string>
+						<string>com.apple.cocoa.path</string>
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>1.0</string>
+				<string>1.1.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>fileNames</key>
+					<dict/>
+				</dict>
 				<key>AMProvides</key>
 				<dict>
 					<key>Container</key>
 					<string>List</string>
 					<key>Types</key>
 					<array>
-						<string>com.apple.applescript.alias-object</string>
+						<string>com.apple.cocoa.path</string>
 					</array>
 				</dict>
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Get Specified Finder Items.action</string>
-				<key>ActionIconName</key>
-				<string>Finder</string>
 				<key>ActionName</key>
 				<string>Get Specified Finder Items</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>fileNames</key>
 					<array>
-						<string>/Users/justin/Library/Caches/Safari</string>
-						<string>/Users/justin/Library/Safari/Downloads.plist</string>
-						<string>/Users/justin/Library/Safari/History.plist</string>
-						<string>/Users/justin/Library/Safari/Icons</string>
+						<string>~/Library/Safari/Bookmarks.plist</string>
+						<string>~/Library/Safari/Icons.db</string>
+						<string>~/Library/Safari/WebpageIcons.db</string>
+						<string>~/Library/Safari/HistoryIndex.sk</string>
+						<string>~/Library/Safari/History.plist</string>
+						<string>~/Library/Safari/TopSites.plist</string>
+						<string>~/Library/Caches/com.apple.Safari/Cache.db</string>
+						<string>~/Library/Caches/com.apple.Safari/Webpage Previews</string>
+						<string>~/Library/Safari/Databases</string>
+						<string>~/Library/Safari/LocalStorage</string>
 					</array>
 				</dict>
-				<key>Application</key>
-				<array>
-					<string>Finder</string>
-				</array>
+				<key>ActionRuntimeParameters</key>
+				<dict>
+					<key>fileNames</key>
+					<array>
+						<string>~/Library/Safari/Bookmarks.plist</string>
+						<string>~/Library/Safari/Icons.db</string>
+						<string>~/Library/Safari/WebpageIcons.db</string>
+						<string>~/Library/Safari/HistoryIndex.sk</string>
+						<string>~/Library/Safari/History.plist</string>
+						<string>~/Library/Safari/TopSites.plist</string>
+						<string>~/Library/Caches/com.apple.Safari/Cache.db</string>
+						<string>~/Library/Caches/com.apple.Safari/Webpage Previews</string>
+						<string>~/Library/Safari/Databases</string>
+						<string>~/Library/Safari/LocalStorage</string>
+					</array>
+					<key>temporary items path</key>
+					<string>/var/folders/5k/w1kdr8048xj08f0059b215yh0000gp/T/5DC820FF-D988-4FE0-8863-E9C0D1E7E428/1/com.apple.Automator.SpecifiedFiles</string>
+				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.SpecifiedFiles</string>
 				<key>CFBundleVersion</key>
-				<string>1.0</string>
+				<string>1.1.2</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<false/>
 				<key>CanShowWhenRun</key>
 				<true/>
 				<key>Category</key>
 				<array>
-					<string>Find</string>
+					<string>AMCategoryFilesAndFolders</string>
 				</array>
 				<key>Class Name</key>
 				<string>SpecifiedFilesAction</string>
 				<key>InputUUID</key>
-				<string>05B6366D-5163-47BC-A498-DCB42F1605D0</string>
+				<string>D9E5D0EF-501A-49DC-9B83-E87C3EE07F70</string>
 				<key>Keywords</key>
 				<array>
 					<string>File</string>
@@ -197,11 +215,9 @@ end run</string>
 					<string>Get</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>3BB0AFCC-834E-42C5-8DBD-F34327B6076B</string>
-				<key>StartAction</key>
-				<false/>
+				<string>0203E0CB-2613-465A-919D-481B9E3AF54B</string>
 				<key>UUID</key>
-				<string>9EC1311E-049A-4E0D-9724-4C68646D7196</string>
+				<string>BFEE9781-6BBA-4756-A2DE-0E2335A952DA</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Finder</string>
@@ -222,17 +238,17 @@ end run</string>
 						<string>0</string>
 					</dict>
 				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>325.000000:453.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Specified Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
-			<key>collapsed</key>
-			<false/>
-			<key>isOutletsVisible</key>
-			<false/>
 			<key>isViewVisible</key>
 			<true/>
-			<key>location</key>
-			<string>1132.000000:685.666687</string>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -246,11 +262,39 @@ end run</string>
 					<key>Types</key>
 					<array>
 						<string>com.apple.applescript.alias-object</string>
-						<string>com.apple.finder.file-or-folder-object</string>
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>1.0</string>
+				<string>1.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>confirmAction</key>
+					<dict/>
+					<key>confirmText</key>
+					<dict/>
+					<key>deleteType</key>
+					<dict/>
+					<key>filesOnly</key>
+					<dict/>
+					<key>ignoreErrors</key>
+					<dict/>
+					<key>ignorePermissions</key>
+					<dict/>
+					<key>onePassWipe</key>
+					<dict/>
+					<key>removeOnly</key>
+					<dict/>
+					<key>sevenPassWipe</key>
+					<dict/>
+					<key>thirtyFivePassWipe</key>
+					<dict/>
+					<key>withRecursion</key>
+					<dict/>
+				</dict>
 				<key>AMProvides</key>
 				<dict>
 					<key>Container</key>
@@ -264,20 +308,22 @@ end run</string>
 				<array/>
 				<key>ActionBundlePath</key>
 				<string>/Users/justin/Library/Automator/Delete Files.action</string>
-				<key>ActionIconName</key>
-				<string>Finder</string>
 				<key>ActionName</key>
 				<string>Delete Files</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>confirmAction</key>
-					<false/>
+					<true/>
 					<key>confirmText</key>
 					<string>Wipe Safari Caches?</string>
 					<key>deleteType</key>
 					<integer>1</integer>
-					<key>ignoreErrors</key>
+					<key>filesOnly</key>
 					<false/>
+					<key>ignoreErrors</key>
+					<true/>
+					<key>ignorePermissions</key>
+					<true/>
 					<key>onePassWipe</key>
 					<false/>
 					<key>removeOnly</key>
@@ -286,15 +332,40 @@ end run</string>
 					<false/>
 					<key>thirtyFivePassWipe</key>
 					<false/>
+					<key>withRecursion</key>
+					<true/>
 				</dict>
-				<key>Application</key>
-				<array>
-					<string>Finder</string>
-				</array>
+				<key>ActionRuntimeParameters</key>
+				<dict>
+					<key>confirmAction</key>
+					<true/>
+					<key>confirmText</key>
+					<string>Wipe Safari Caches?</string>
+					<key>deleteType</key>
+					<integer>1</integer>
+					<key>filesOnly</key>
+					<false/>
+					<key>ignoreErrors</key>
+					<true/>
+					<key>ignorePermissions</key>
+					<true/>
+					<key>onePassWipe</key>
+					<false/>
+					<key>removeOnly</key>
+					<true/>
+					<key>sevenPassWipe</key>
+					<false/>
+					<key>temporary items path</key>
+					<string>/var/folders/5k/w1kdr8048xj08f0059b215yh0000gp/T/5DC820FF-D988-4FE0-8863-E9C0D1E7E428/1/com.justinmiddleton.Automator.DeleteFiles</string>
+					<key>thirtyFivePassWipe</key>
+					<false/>
+					<key>withRecursion</key>
+					<true/>
+				</dict>
 				<key>BundleIdentifier</key>
-				<string>com.justinrobertmiddleton.Automator.Delete_Files</string>
+				<string>com.justinmiddleton.Automator.DeleteFiles</string>
 				<key>CFBundleVersion</key>
-				<string>1.0</string>
+				<string>1.1</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<true/>
 				<key>CanShowWhenRun</key>
@@ -308,7 +379,12 @@ end run</string>
 				<key>InputUUID</key>
 				<string>0516AF12-FFE7-4216-B12B-75BA1E3245B2</string>
 				<key>Keywords</key>
-				<array/>
+				<array>
+					<string>delete</string>
+					<string>wipe</string>
+					<string>recursive</string>
+					<string>secure</string>
+				</array>
 				<key>OutputUUID</key>
 				<string>89C5D188-6721-45CD-876F-F28C045541D0</string>
 				<key>SelectedShowWhenRunItemNames</key>
@@ -319,8 +395,6 @@ end run</string>
 				<true/>
 				<key>ShowWhenRun</key>
 				<true/>
-				<key>StartAction</key>
-				<false/>
 				<key>UUID</key>
 				<string>FA8BD2CE-908F-49C2-BD54-9923E5952F3B</string>
 				<key>UnlocalizedApplications</key>
@@ -334,7 +408,7 @@ end run</string>
 						<key>default value</key>
 						<false/>
 						<key>name</key>
-						<string>ignoreErrors</string>
+						<string>ignorePermissions</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -345,9 +419,9 @@ end run</string>
 					<key>1</key>
 					<dict>
 						<key>default value</key>
-						<string>Permanently delete (can't be undone)?</string>
+						<true/>
 						<key>name</key>
-						<string>confirmText</string>
+						<string>confirmAction</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -358,9 +432,9 @@ end run</string>
 					<key>2</key>
 					<dict>
 						<key>default value</key>
-						<false/>
+						<string>Permanently delete (can't be undone)?</string>
 						<key>name</key>
-						<string>onePassWipe</string>
+						<string>confirmText</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -371,9 +445,9 @@ end run</string>
 					<key>3</key>
 					<dict>
 						<key>default value</key>
-						<false/>
+						<integer>0</integer>
 						<key>name</key>
-						<string>sevenPassWipe</string>
+						<string>deleteType</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -384,9 +458,9 @@ end run</string>
 					<key>4</key>
 					<dict>
 						<key>default value</key>
-						<true/>
+						<false/>
 						<key>name</key>
-						<string>confirmAction</string>
+						<string>filesOnly</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -397,9 +471,9 @@ end run</string>
 					<key>5</key>
 					<dict>
 						<key>default value</key>
-						<integer>0</integer>
+						<false/>
 						<key>name</key>
-						<string>deleteType</string>
+						<string>ignoreErrors</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -412,7 +486,7 @@ end run</string>
 						<key>default value</key>
 						<false/>
 						<key>name</key>
-						<string>thirtyFivePassWipe</string>
+						<string>withRecursion</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -420,52 +494,33 @@ end run</string>
 						<key>uuid</key>
 						<string>6</string>
 					</dict>
-					<key>7</key>
-					<dict>
-						<key>default value</key>
-						<true/>
-						<key>name</key>
-						<string>removeOnly</string>
-						<key>required</key>
-						<string>0</string>
-						<key>type</key>
-						<string>0</string>
-						<key>uuid</key>
-						<string>7</string>
-					</dict>
 				</dict>
-				<key>conversionDistance</key>
-				<integer>0</integer>
-				<key>conversionLabel</key>
-				<integer>1</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>325.000000:215.000000</string>
 				<key>nibPath</key>
 				<string>/Users/justin/Library/Automator/Delete Files.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
-			<key>collapsed</key>
-			<false/>
-			<key>isOutletsVisible</key>
-			<false/>
 			<key>isViewVisible</key>
 			<true/>
-			<key>location</key>
-			<string>852.000000:732.333313</string>
 		</dict>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>81AB9ECB-C647-4283-B8FA-C86D7A8D03B2</key>
+		<key>9348534C-F117-4D3C-BB37-DBC139E3C89C</key>
 		<dict>
 			<key>from</key>
-			<string>9EC1311E-049A-4E0D-9724-4C68646D7196 - 3BB0AFCC-834E-42C5-8DBD-F34327B6076B</string>
+			<string>84BA667B-D3CC-4161-8217-051C4FBC0C9D - 84BA667B-D3CC-4161-8217-051C4FBC0C9D</string>
 			<key>to</key>
-			<string>FA8BD2CE-908F-49C2-BD54-9923E5952F3B - 0516AF12-FFE7-4216-B12B-75BA1E3245B2</string>
+			<string>BFEE9781-6BBA-4756-A2DE-0E2335A952DA - BFEE9781-6BBA-4756-A2DE-0E2335A952DA</string>
 		</dict>
-		<key>F88728A3-FC1F-4F7E-BDAE-C9EB39425273</key>
+		<key>CCA52679-9D54-49D9-BD32-38DF9F95FD94</key>
 		<dict>
 			<key>from</key>
-			<string>84BA667B-D3CC-4161-8217-051C4FBC0C9D - 5F141038-786C-45BC-B34A-45BFAF3A73D1</string>
+			<string>BFEE9781-6BBA-4756-A2DE-0E2335A952DA - BFEE9781-6BBA-4756-A2DE-0E2335A952DA</string>
 			<key>to</key>
-			<string>9EC1311E-049A-4E0D-9724-4C68646D7196 - 05B6366D-5163-47BC-A498-DCB42F1605D0</string>
+			<string>FA8BD2CE-908F-49C2-BD54-9923E5952F3B - FA8BD2CE-908F-49C2-BD54-9923E5952F3B</string>
 		</dict>
 	</dict>
 	<key>state</key>
@@ -482,6 +537,11 @@ end run</string>
 		<real>439</real>
 		<key>windowFrame</key>
 		<string>{{191, 183}, {939, 693}}</string>
+	</dict>
+	<key>workflowMetaData</key>
+	<dict>
+		<key>workflowTypeIdentifier</key>
+		<string>com.apple.Automator.workflow</string>
 	</dict>
 </dict>
 </plist>

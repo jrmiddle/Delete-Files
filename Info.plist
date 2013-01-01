@@ -29,13 +29,13 @@
 		<string>Permanently delete (can&apos;t be undone)?</string>
 		<key>deleteType</key>
 		<integer>0</integer>
-		<key>ignoreErrors</key>
-		<false/>
 		<key>filesOnly</key>
 		<false/>
-		<key>withRecursion</key>
+		<key>ignoreErrors</key>
 		<false/>
 		<key>ignorePermissions</key>
+		<false/>
+		<key>withRecursion</key>
 		<false/>
 	</dict>
 	<key>AMDescription</key>
@@ -45,16 +45,14 @@
 		<key>AMDInput</key>
 		<string>Files to delete.</string>
 		<key>AMDNote</key>
-		<string>Written by Justin Middleton, jrmiddle@mac.com</string>
+		<string>Written by Justin Middleton, jrmiddle@gmail.com</string>
 		<key>AMDOptions</key>
-		<string>
-			Delete Only: simply perform a delete (unlink) on each file, do not overwrite.
-			N-pass Wipe: Overwrite with files with random data N times (files cannot be recovered).
-			Recursive: Delete/Overwrite entire directory trees.
-			Files Only: Leave directory structures in place.
-			Ignore Errors: don&apos;t prompt to stop/continue when errors occur.
-			Include read-only files: 
-		</string>
+		<string>Delete Only: simply perform a delete (unlink) on each file, do not overwrite.
+N-pass Wipe: Overwrite with files with random data N times (files cannot be recovered).
+Recursive: Delete/Overwrite entire directory trees.
+Files Only: Leave directory structures in place.
+Ignore Errors: don&apos;t prompt to stop/continue when errors occur.
+Include read-only files: Delete files even if they (or their parent directories) are read-only.</string>
 		<key>AMDRelatedActions</key>
 		<string></string>
 		<key>AMDRequires</key>
@@ -91,11 +89,11 @@
 	<key>CFBundleExecutable</key>
 	<string>Delete Files</string>
 	<key>CFBundleGetInfoString</key>
-	<string>Delete Files version 1.1, Copyright (c) 2006, Justin R. Middleton.</string>
+	<string>Delete Files version 2, Copyright (c) 2006-2012, Justin R. Middleton.</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>com.justinrobertmiddleton.Automator.DeleteFiles</string>
+	<string>com.justinmiddleton.Automator.DeleteFiles</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
