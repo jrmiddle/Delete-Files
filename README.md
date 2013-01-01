@@ -28,7 +28,7 @@ If you like it, or have suggestions, or just want to say "Hi," feel free to drop
 
 # Download
 
-If you just want to download and get rolling, you can find the binary (DMG image) at http://justinmiddleton.com.
+If you just want to download and get rolling, you can find the binary (DMG image) at http://justinmiddleton.com/downloads/Delete%20Files%202.dmg.
 
 # Changes
 
