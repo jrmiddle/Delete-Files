@@ -25,3 +25,7 @@ Three sample workflows are included:
 
 This action is free to use, provided that credit is given to me in any published work which uses the software.
 If you like it, or have suggestions, or just want to say "Hi," feel free to drop me a line at jrmiddle@gmail.com.
+
+# Download
+
+If you just want to download and get rolling, you can find the binary (DMG image) at http://justinmidleton.com.
